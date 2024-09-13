@@ -100,7 +100,6 @@ function Sputnik() {
                                         <span class="sr-only">Next</span>
                                     </span>
                                 </button>
-                                <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
                             </div>
                             </div>
 
