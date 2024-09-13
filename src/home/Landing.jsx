@@ -5,6 +5,8 @@ import Pilotperks from './Pilotperks';
 import Roadmap from './Roadmap';
 import Projections from './Projections';
 import Pilotlifestlye from './Pilotlifestyle';
+import Pilotjourney from './PilotJourney';
+
 
 
 function Landing() {
@@ -15,7 +17,10 @@ function Landing() {
         <Pilotperks />
         <Roadmap />
         <Projections />
+        <Pilotjourney />
         <Pilotlifestlye />
+
+
     </div>
   );
 }

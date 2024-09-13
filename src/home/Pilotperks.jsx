@@ -1,5 +1,8 @@
 import React from 'react';
-import pilot1 from './pictures/pilot1.jpg';
+import motivation1 from './pictures/mot1.jpg';
+import motivation2 from './pictures/mot2.jpg';
+import motivation3 from './pictures/mot3.jpg';
+import motivation4 from './pictures/mot4.jpg';
 
 function Pilotperks() {
     return (
@@ -25,7 +28,7 @@ function Pilotperks() {
                             <a href="#" className="block w-full h-full overflow-hidden rounded-lg" data-aos="fade-up" data-aos-duration="1000">
                                 <img
                                     className="w-full h-full object-cover transform hover:scale-150 transition-transform duration-[600ms]"
-                                    src={pilot1}
+                                    src={motivation1}
                                     alt=""
                                 />
                             </a>
@@ -36,7 +39,7 @@ function Pilotperks() {
                             <a href="#" className="block w-full h-full overflow-hidden rounded-lg" data-aos="fade-up" data-aos-duration="1000">
                                 <img
                                     className="w-full h-full object-cover transform hover:scale-150 transition-transform duration-[600ms]"
-                                    src={pilot1}
+                                    src={motivation2}
                                     alt=""
                                 />
                             </a>
@@ -47,7 +50,7 @@ function Pilotperks() {
                             <a href="#" className="block w-full h-full overflow-hidden rounded-lg" data-aos="fade-up" data-aos-duration="1000">
                                 <img
                                     className="w-full h-full object-cover transform hover:scale-150 transition-transform duration-[600ms]"
-                                    src={pilot1}
+                                    src={motivation3}
                                     alt=""
                                 />
                             </a>
@@ -58,7 +61,7 @@ function Pilotperks() {
                             <a href="#" className="block w-full h-full overflow-hidden rounded-lg" data-aos="fade-up" data-aos-duration="1000">
                                 <img
                                     className="w-full h-full object-cover transform hover:scale-150 transition-transform duration-[600ms]"
-                                    src={pilot1}
+                                    src={motivation4}
                                     alt=""
                                 />
                             </a>

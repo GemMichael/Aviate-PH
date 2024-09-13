@@ -41,7 +41,7 @@ function Navbar() {
                             <a href="#portfolio" className="block text-center text-black rounded md:bg-transparent">Aviation News</a>
                         </li>
                         <li className="text-center">
-                            <a href="#contact" className="block text-center text-black rounded md:bg-transparent">Discovery Flights</a>
+                        <Link to="/landingdiscovery" className="block text-center text-black rounded md:bg-transparent">Discovery Flights/ Simulator</Link>
                         </li>
                     </ul>
                 </div>

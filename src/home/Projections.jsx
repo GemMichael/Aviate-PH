@@ -15,9 +15,7 @@ function Projections() {
                         <div className="absolute inset-0 rounded-lg bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-blue-800 via-blue-500 to-blue-400 opacity-20 blur-md sm:blur-lg lg:blur-2xl"></div>
                         <div className="col-span-5 p-4 flex  items-center justify-center border border-zinc-700 rounded-lg bg-white/80 backdrop-blur-md text-black">
                             <h1 className="text-lg sm:text-xl md:text-2xl">
-                                This is a longer content that adjusts the size of the container. This is a longer content that adjusts the size of the container.
-                                This is a longer content that adjusts the size of the container. This is a longer content that adjusts the size of the container.
-                                This is a longer content that adjusts the size of the container. This is a longer content that adjusts the size of the container.
+                                more
                             </h1>
                         </div>
                     </div>
@@ -28,9 +26,7 @@ function Projections() {
                         <div className="absolute inset-0 rounded-lg bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-blue-800 via-blue-500 to-blue-400 opacity-20 blur-md sm:blur-lg lg:blur-2xl"></div>
                         <div className="col-span-5 p-4 flex  items-center justify-center border border-zinc-700 rounded-lg bg-white/80 backdrop-blur-md text-black">
                             <h1 className="text-lg sm:text-xl md:text-2xl">
-                                This is a longer content that adjusts the size of the container. This is a longer content that adjusts the size of the container.
-                                This is a longer content that adjusts the size of the container. This is a longer content that adjusts the size of the container.
-                                This is a longer content that adjusts the size of the container. This is a longer content that adjusts the size of the container.
+                                more
                             </h1>
                         </div>
                     </div>
