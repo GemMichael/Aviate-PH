@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import pilot1 from '../pictures/pilot1.jpg';
-import secdealogo from '../pictures/secdealogo.jpg';
+import secdealogo from '../pictures/SECDEAlogo.jpg';
 
 
 function SECDEA() {
