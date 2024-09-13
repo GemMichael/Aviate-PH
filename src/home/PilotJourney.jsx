@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import pilot1 from './pictures/pilot1.jpg';
 import video5 from './Videos/vid5.mp4';
-import captjm from './Videos/Captjm.mp4';
+import captjm from './Videos/CaptJm.mp4';
 import captjmpinning from './Videos/Captjmpinning.mp4';
 import captstef from './Videos/Captstef.mp4';
 import pilotmatts from './Videos/Pilotmatts.mp4';
