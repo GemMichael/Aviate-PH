@@ -18,19 +18,16 @@ function AFES() {
                 <div className="flex lg:flex-row flex-col-reverse items-center justify-between gap-9">
                     <div data-aos="fade-down-left" data-aos-duration="1000" className="max-w-[694px] w-full flex flex-col gap-4 lg:gap-[32px] ">
                         <div>
-                            <h1 className="lg:w-[694px] lg:text-start md:text-center text-transparent bg-clip-text bg-gradient-to-r from-[#87CEEB] to-[#191970] text-5xl lg:text-[56px] font-bold via-[#4682B4] leading-[1.3] ">
+                            <h1 className="lg:w-[694px] lg:text-start md:text-center text-transparent bg-clip-text bg-gradient-to-r from-[#F15A29] to-[#F7941E] text-5xl lg:text-[56px] font-bold via-[#bdb9b9] leading-[1.3] ">
                                 Adventure Flight Education and Sports
                             </h1>
                         </div>
                         <div className="w-full lg:max-w-[79%]">
                             <p className="text-black lg:text-start md:text-center leading-[1.5]">
-                                AAG has stratergically postioned its training platform in locations that can best support
-                                the growth in the largest aviation market.
+                            Choose us if you are passionate about flying, as flight training is an intense endeavor that requires full attention, concentration and dedication. 
+                            If you are ready, AFES will provide you with the right balance of challenge and guidance, to equip you for a rewarding career in aviation.
                             </p>
-                            <p className="mt-5 text-black  lg:text-start md:text-center leading-[1.5]">
-                                Continuous expansion of pilot training capability allows AAG to address the resurgence
-                                of airline pilot shortage post-pandemic and offer partner airlines end-to-end cadetship training solutions.
-                            </p>
+
                         </div>
 
                     </div>
@@ -46,14 +43,12 @@ function AFES() {
                 <div className="w-full max-w-[634px] -z-10 h-[494px] bg-gradient-to-br absolute top-[741px] -translate-x-1/2 left-1/2  from-blue-500 to-fuchsia-500 rounded-full blur-[123px] opacity-[26%]"></div>
                 <section id="services" className="max-w-[1160px] w-full mx-auto mt-[150px] flex flex-col gap-6 px-[24px] xl:px-0">
                     <div data-aos="fade-up" data-aos-duration="1000">
-                        <h1 className="text-black text-5xl lg:text-[56px] font-bold text-center leading-[1] ">Fly Beyond Ordinary—Chase Your Dreams!</h1>
+                        <h1 className="text-black text-5xl lg:text-[56px] font-bold text-center leading-[1] ">Aircraft and Simulator Fleets</h1>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1000">
                         <p className="w-full max-w-[793px] text-center text-black text-base font-normal mx-auto leading-[1.5]">
-                            Embarking to become a pilot means stepping into a world of extraordinary opportunities and endless possibilities.
-                            It’s about more than just flying an aircraft; it’s about pushing boundaries, embracing adventure, and pursuing a passion that takes you above and beyond the everyday.
-                            As a pilot, you don’t just see the world from a different perspective—you experience life at its most exhilarating. Let your dreams take flight and soar to new heights, both in the skies and in your career.
-                            The adventure of a lifetime awaits—are you ready to chase it?
+                        We take pride as the only flight school in the country with Cessna-172s equipped with Continental diesel engines, making flying a whole lot safer. 
+                        You may also choose Cessna-152, the traditional trainer aircraft with a long history in the industry
                         </p>
                     </div>
 

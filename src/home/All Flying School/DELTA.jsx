@@ -18,7 +18,7 @@ function DELTA() {
                 <div className="flex lg:flex-row flex-col-reverse items-center justify-between gap-9">
                     <div data-aos="fade-down-left" data-aos-duration="1000" className="max-w-[694px] w-full flex flex-col gap-4 lg:gap-[32px] ">
                         <div>
-                            <h1 className="lg:w-[694px] lg:text-start md:text-center text-transparent bg-clip-text bg-gradient-to-r from-[#87CEEB] to-[#191970] text-5xl lg:text-[56px] font-bold via-[#4682B4] leading-[1.3] ">
+                            <h1 className="lg:w-[694px] lg:text-start md:text-center text-transparent bg-clip-text bg-gradient-to-r from-[#b22826] to-[#828483] text-5xl lg:text-[56px] font-bold via-[#000000] leading-[1.3] ">
                                 Delta Air International Aviation Academy
                             </h1>
                         </div>
@@ -35,7 +35,7 @@ function DELTA() {
 
                     </div>
                     <div data-aos="fade-up-left" data-aos-duration="1000" className="hidden lg:block w-full lg:w-[397px] relative">
-                        <img className="rounded-lg ml-auto w-full lg:h-[483px] object-cover" src={deltalogo} alt="" />
+                        <img className="rounded-lg ml-auto w-full lg:h-[397px] object-cover" src={deltalogo} alt="" />
                     </div>
 
                 </div>

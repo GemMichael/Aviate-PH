@@ -6,6 +6,8 @@ import Roadmap from './Roadmap';
 import Projections from './Projections';
 import Pilotlifestlye from './Pilotlifestyle';
 import Pilotjourney from './PilotJourney';
+import End from './End';
+import Footer from './Footer';
 
 
 
@@ -19,6 +21,8 @@ function Landing() {
         <Projections />
         <Pilotjourney />
         <Pilotlifestlye />
+        <End />
+        <Footer />
 
 
     </div>

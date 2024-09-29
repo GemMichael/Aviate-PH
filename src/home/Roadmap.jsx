@@ -5,7 +5,7 @@ function Roadmap() {
   return (
     <section className="max-w-[1160px] w-full mx-auto mt-[168px] px-[24px] lg:px-0  ">
       <div data-aos="fade-up" data-aos-duration="1000"
-        className="bg-gradient-to-r flex flex-col lg:flex-row justify-between items-center from-blue-500/[70%] to-blue-300/[50%] rounded-lg px-8 lg:gap-0 gap-3 lg:px-[45.5px] py-10">
+        className="bg-gradient-to-r flex flex-col lg:flex-row justify-between items-center from-blue-500/[70%] to-blue-500/[50%] rounded-lg px-8 lg:gap-0 gap-3 lg:px-[45.5px] py-10">
         <div data-aos="fade-up" data-aos-duration="1000" className=" w-full lg:w-1/2 ">
           <h1 className="text-[56px] text-white sm:text-center lg:text-center font-bold leading-[1] mb-3 ">Various Pilot Licenses You Can Obtain</h1>
         </div>
