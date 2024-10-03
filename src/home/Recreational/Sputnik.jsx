@@ -1,7 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import pilot1 from '../pictures/pilot1.jpg';
 import sputnik from '../pictures/Sputniklogo.jpg';
+import sput1 from '../Recreational/Pics/sput1.jpg';
+import sput2 from '../Recreational/Pics/sput2.jpg';
+import sput3 from '../Recreational/Pics/sput3.jpg';
+import sput4 from '../Recreational/Pics/sput4.jpg';
+import sput5 from '../Recreational/Pics/sput5.jpg';
+import sput6 from '../Recreational/Pics/sput6.jpg';
+import sput7 from '../Recreational/Pics/sput7.jpg';
+import sput8 from '../Recreational/Pics/sput8.jpg';
+import sput9 from '../Recreational/Pics/sput9.jpg';
 
 
 function Sputnik() {
@@ -30,12 +38,91 @@ function Sputnik() {
                                 Whether you're aspiring to become a pilot or simply looking for a thrilling flying experience, Sputnik Aviation brings your aviation dreams to life.
                             </p>
                         </div>
+                        <a
+                            href="https://sputnikaviation.com/bookings/"
+                            className="bg-[#103f8b] hover:bg-[#C9A03B] transition-all duration-300 text-white py-3 px-8 rounded-lg text-lg font-semibold shadow-lg">
+                            Book Your Experience
+                        </a>
 
                     </div>
                     <div data-aos="fade-up-left" data-aos-duration="1000" className="hidden lg:block w-full lg:w-[397px] relative">
                         <img className="rounded-lg ml-auto w-full lg:h-[483px] object-cover" src={sputnik} alt="" />
                     </div>
 
+                </div>
+            </section>
+
+            <div className="w-full max-w-[634px] -z-10 h-[494px] bg-gradient-to-br absolute top-[741px] -translate-x-1/2 left-1/2  from-blue-500 to-yellow-600 rounded-full blur-[123px] opacity-[26%]"></div>
+            <section id="services" className="max-w-[1160px] w-full mx-auto mt-[200px] flex flex-col gap-10 px-[24px] xl:px-0">
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <h1 className="text-black text-5xl lg:text-[56px] font-bold text-center leading-[1] ">Step into the Cockpit with Sputnik Aviation: Unleash Your Aviation Adventure</h1>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <p className="w-full max-w-[793px] text-center text-black text-base font-normal mx-auto leading-[1.5]">
+                        Becoming a pilot is more than just mastering the skies-it's about embracing
+                        adventure and experiecing life from a thrilling, elevated perspective. At Sputnik Aviation, we bring your aviation dreams to life
+                        with top-flight simulators and expert-guided experciences. Ready to take leap and soar?
+                        Your adventure begins here.
+                    </p>
+                </div>
+                <div className="flex flex-wrap justify-center">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            <a href="#">
+                                <img class="rounded-t-lg" src={sputnik} alt="" />
+                            </a>
+                            <div class="p-5">
+                                <a href="#">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Airline Expercience</h5>
+                                </a>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Read more
+                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="flip-down" data-aos-duration="1000">
+                        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            <a href="#">
+                                <img class="rounded-t-lg" src={sputnik} alt="" />
+                            </a>
+                            <div class="p-5">
+                                <a href="#">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Single Trainer</h5>
+                                </a>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Read more
+                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            <a href="#">
+                                <img class="rounded-t-lg" src={sputnik} alt="" />
+                            </a>
+                            <div class="p-5">
+                                <a href="#">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Celebrate with Us</h5>
+                                </a>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Read more
+                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -55,134 +142,75 @@ function Sputnik() {
                         </p>
                     </div>
 
-                    <div className="">
-                        <div data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000" className="col-span-1">
 
 
-                            <div id="gallery" class="relative w-full" data-carousel="slide">
-
-                                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-
-                                    <div class="duration-700 ease-in-out" data-carousel-item>
-                                        <img src={pilot1} class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""></img>
-                                    </div>
-
-                                    <div class=" duration-700 ease-in-out" data-carousel-item="active">
-                                        <img src={sputnik} class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""></img>
-                                    </div>
-
-                                    <div class=" duration-700 ease-in-out" data-carousel-item>
-                                        <img src={pilot1} class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""></img>
-                                    </div>
-
-                                    <div class=" duration-700 ease-in-out" data-carousel-item>
-                                        <img src={sputnik} class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""></img>
-                                    </div>
-
-                                    <div class="duration-700 ease-in-out" data-carousel-item>
-                                        <img src={pilot1} class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""></img>
-                                    </div>
-                                </div>
-
-                                <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
-                                        </svg>
-                                        <span class="sr-only">Previous</span>
-                                    </span>
-                                </button>
-                                <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
-                                        </svg>
-                                        <span class="sr-only">Next</span>
-                                    </span>
-                                </button>
-                                <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-                    <div className="w-full max-w-[634px] -z-10 h-[494px] bg-gradient-to-br absolute top-[741px] -translate-x-1/2 left-1/2  from-blue-500 to-yellow-600 rounded-full blur-[123px] opacity-[26%]"></div>
-                    <section id="services" className="max-w-[1160px] w-full mx-auto mt-[150px] flex flex-col gap-6 px-[24px] xl:px-0">
-                        <div data-aos="fade-up" data-aos-duration="1000">
-                            <h1 className="text-black text-5xl lg:text-[56px] font-bold text-center leading-[1] ">Discover top-flight simulators by Sputnik Aviation and dive into the world of aviation.</h1>
-                        </div>
-                        <div data-aos="fade-up" data-aos-duration="1000">
-                            <p className="w-full max-w-[793px] text-center text-black text-base font-normal mx-auto leading-[1.5]">
-                                Embarking to become a pilot means stepping into a world of extraordinary opportunities and endless possibilities.
-                                It’s about more than just flying an aircraft; it’s about pushing boundaries, embracing adventure, and pursuing a passion that takes you above and beyond the everyday.
-                                As a pilot, you don’t just see the world from a different perspective—you experience life at its most exhilarating. Let your dreams take flight and soar to new heights, both in the skies and in your career.
-                                The adventure of a lifetime awaits—are you ready to chase it?
-                            </p>
-                        </div>
-                        <div className="flex flex-wrap justify-center">
-                        <div data-aos="fade-right" data-aos-duration="1000">
-                        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                            <a href="#">
-                                <img class="rounded-t-lg" src={sputnik} alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                    <section className="max-w-[1160px] w-full mx-auto mt-[168px]  px-[24px] lg:px-0 ">
+                        <h3 className="text-[56px] justify-center text-center font-bold text-black leading-[1]">Pilot Lifestyle</h3>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-[51px]">
+                            <div className="grid gap-4" >
+                                <a className="overflow-hidden rounded-lg" data-aos="fade-up" data-aos-duration="1000">
+                                    <img loading="lazy" className="h-full w-full max-w-full object-cover transform hover:scale-150 transition-all duration-[600ms]" src={sput1} alt="" />
                                 </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                    </svg>
+                                <a className="overflow-hidden rounded-lg" data-aos="fade-up" data-aos-duration="1000">
+                                    <img loading="lazy" className="h-full w-full max-w-full object-cover transform hover:scale-150 transition-all duration-[600ms]" src={sput2} alt="" />
+                                </a>
+                                <a className="overflow-hidden rounded-lg" data-aos="fade-up" data-aos-duration="1000">
+                                    <img loading="lazy" className="h-full w-full max-w-full object-cover transform hover:scale-150 transition-all duration-[600ms]" src={sput3} alt="" />
                                 </a>
                             </div>
-                            </div>
-                        </div>
-                        <div data-aos="flip-down" data-aos-duration="1000">
-                        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                            <a href="#">
-                                <img class="rounded-t-lg" src={sputnik} alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                            <div data-aos="fade-up" data-aos-duration="1500" className="grid gap-4">
+                                <a className="overflow-hidden rounded-lg" data-aos="fade-up" data-aos-duration="1000">
+                                    <img loading="lazy" className="h-full w-full max-w-full object-cover transform hover:scale-150 transition-all duration-[600ms]" src={sput4} alt="" />
                                 </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                    </svg>
+                                <a className="overflow-hidden rounded-lg" data-aos="fade-up" data-aos-duration="1000">
+                                    <img loading="lazy" className="h-full w-full max-w-full object-cover transform hover:scale-150 transition-all duration-[600ms]" src={sput5} alt="" />
+                                </a>
+                                <a className="overflow-hidden rounded-lg" data-aos="fade-up" data-aos-duration="1000">
+                                    <img loading="lazy" className="h-full w-full max-w-full object-cover transform hover:scale-150 transition-all duration-[600ms]" src={sput6} alt="" />
                                 </a>
                             </div>
-                            </div>
-                        </div>
-                        <div data-aos="fade-left" data-aos-duration="1000">
-                        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                            <a href="#">
-                                <img class="rounded-t-lg" src={sputnik} alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                            <div className="grid gap-4" data-aos="fade-up" data-aos-duration="2000">
+                                <a className="overflow-hidden rounded-lg" data-aos="fade-up" data-aos-duration="1000">
+                                    <img loading="lazy" className="h-full w-full max-w-full object-cover transform hover:scale-150 transition-all duration-[600ms]" src={sput7} alt="" />
                                 </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                    </svg>
+                                <a className="overflow-hidden rounded-lg" data-aos="fade-up" data-aos-duration="1000">
+                                    <img loading="lazy" className="h-full w-full max-w-full object-cover transform hover:scale-150 transition-all duration-[600ms]" src={sput8} alt="" />
+                                </a>
+                                <a className="overflow-hidden rounded-lg" data-aos="fade-up" data-aos-duration="1000">
+                                    <img loading="lazy" className="h-full w-full max-w-full object-cover transform hover:scale-150 transition-all duration-[600ms]" src={sput9} alt="" />
                                 </a>
                             </div>
-                            </div>
-                        </div>
                         </div>
                     </section>
 
-                    
+                    <section id="contact" className="max-w-[1160px] w-full mx-auto mt-40 px-[24px] lg:px-0 " >
+                        <div data-aos="fade-up" data-aos-duration="1000" className=" bg-gradient-to-r pt-[85px] pb-[35px] px-[40px] lg:px-[59px] from-[#45174c] to-[#1c164d] rounded-lg flex-col justify-end items-center gap-[132px] w-full">
+                            <div className="flex justify-center items-center flex-col">
+                                <p className="text-stone-300 text-lg mb-[23px]">CONTACT US</p>
+                                <p className="text-white text-[35px] lg:text-[40px] font-bold mb-[45px] text-center">Have a question? Let's talk!</p>
+                                <p className="text-stone-300 font-semibold text-2xl lg:text-4xl">bookings@sputnikaviation.com</p>
+                            </div>
+                            <div className="flex flex-col lg:flex-row justify-between w-full mt-[132px] ">
+                                <p className="text-white font-bold hidden md:block">Sputnik Aviation</p>
+                                <div className="flex justify-between gap-[19px]">
+                                    <a href="https://www.facebook.com/sputnikaviation" className="text-white font-semibold">
+                                        Facebook
+                                    </a>
+                                    <a href="https://www.instagram.com/SputnikAviation?fbclid=IwY2xjawFq22ZleHRuA2FlbQIxMAABHTCPjViqyaQNoLG1utEA_yAT7cafRTXTzdOTyKreBXwt-gyfUd6U4KIuDA_aem_myAm1KPmxDrMTW6yiUA4Og" className="text-white font-semibold">
+                                        Instagram
+                                    </a>
+                                    <a href="https://www.tiktok.com/@sputnikaviation" className="text-white font-semibold">
+                                        TikTok
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+
+
+
 
 
 
