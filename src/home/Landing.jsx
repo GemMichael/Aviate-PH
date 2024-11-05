@@ -20,7 +20,6 @@ function Landing() {
         <Roadmap />
         <Projections />
         <Pilotjourney />
-        <Pilotlifestlye />
         <End />
         <Footer />
 
