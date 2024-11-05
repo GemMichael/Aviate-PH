@@ -94,7 +94,7 @@ function Pilotjourney() {
         <section className="max-w-[1160px] w-full mx-auto mt-[168px] px-[24px] lg:px-0">
             <h3 className="text-[56px] justify-center text-center font-bold text-black leading-[1]">Pilot Journeys</h3>
             <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-4 mt-[51px]">
-                <div className="grid gap-4">
+                <div className="grid gap-4 relative">
                     <video
                         className="h-full w-full object-cover cursor-pointer rounded-lg"
                         src={captjm}
