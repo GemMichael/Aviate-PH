@@ -33,6 +33,9 @@ import TOPFLITE from './home/All Flying School/TOPFLITE';
 import WCC from './home/All Flying School/WCC';
 import LandingDiscovery from './home/Recreational/LandingDiscovery';
 import Sputnik from './home/Recreational/Sputnik';
+import Goodboys from './home/Recreational/Goodboys';
+import Yatzar from './home/Recreational/Yatzar';
+import Subic from './home/Recreational/Subic';
 
 export default function App() {
 
@@ -77,6 +80,9 @@ export default function App() {
         <Route path='wcc' element={<WCC />} />
         <Route path='/landingdiscovery' element={<LandingDiscovery />} />
         <Route path='sputnik' element={<Sputnik />} />
+        <Route path='goodboys' element={<Goodboys />} />
+        <Route path='yatzar' element={<Yatzar />} />
+        <Route path='subic' element={<Subic />} />
       </Routes>
     </Router>
   );

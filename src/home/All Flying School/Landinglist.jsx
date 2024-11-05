@@ -1,328 +1,431 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from '../Navbar';
+import { useState } from 'react';
+import aaglogo from '../pictures/AAGlogo.jpg';
+import afeslogo from '../pictures/AFESlogo.jpg';
+import airworkslogo from '../pictures/Airworkslogo.jpg';
+import aaalogo from '../pictures/AAAlogo.jpg';
+import avianlogo from '../pictures/AVIANlogo.jpg';
+import cheynair from '../pictures/CHEYNAIRlogo.jpg';
+import constrails from '../pictures/CONSTRAILSlogo.jpg';
+import continental from '../pictures/CONTINENTALlogo.jpg';
+import deltalogo from '../pictures/DELTAlogo.jpg';
+import echologo from '../pictures/ECHOlogo.png'
+import faalogo from '../pictures/FAAlogo.png';
+import fastlogo from '../pictures/FASTlogo.png';
+import flitelogo from '../pictures/FLITElogo.jpg';
+import iaulogo from '../pictures/IAUlogo.jpg';
+import laminarlogo from '../pictures/LAMINARlogo.png';
+import leiaalogo from '../pictures/LEIAAlogo.jpg';
+import omnilogo from '../pictures/OMNIlogo.jpg';
+import orientlogo from '../pictures/ORIENTlogo.jpg';
+import pilipinaslogo from '../pictures/PILIPINASlogo.jpg';
+import precisionlogo from '../pictures/PRECISION.jpg';
+import royhlelogo from '../pictures/ROYHLElogo.jpg';
+import sapphirelogo from '../pictures/SAPPHIRElogo.jpg';
+import secdealogo from '../pictures/SECDEAlogo.jpg';
+import strikelogo from '../pictures/STRIKElogo.jpg';
+import topflitelogo from '../pictures/TOPFLITElogo.png';
+import wcclogo from '../pictures/WCClogo.jpg';
+import alexiuslogo from '../pictures/ALEXIUSlogo.png';
+
 
 function Landinglist() {
+
+    const [hoveredLogo, setHoveredLogo] = useState(null);
+
+    const alphaAviationLogo = aaglogo;
+    const adventureFlightLogo = afeslogo;
+    const airworksLogo = airworkslogo;
+    const allAsiaLogo = aaalogo;
+    const aviantechLogo = avianlogo;
+    const cheynairLogo = cheynair;
+    const continentalLogo = continental;
+    const constrailsLogo = constrails;
+    const deltaLogo = deltalogo;
+    const echoLogo = echologo;
+    const faaLogo = faalogo;
+    const fastLogo = fastlogo;
+    const fliteLogo = flitelogo;
+    const iauLogo = iaulogo;
+    const laminarLogo = laminarlogo;
+    const leiaaLogo = leiaalogo;
+    const omniLogo = omnilogo;
+    const orientLogo = orientlogo;
+    const pilipinasLogo = pilipinaslogo;
+    const precisionLogo = precisionlogo;
+    const royhleLogo = royhlelogo;
+    const sapphireLogo = sapphirelogo;
+    const secdeaLogo = secdealogo;
+    const alexiusLogo = alexiuslogo;
+    const strikeLogo = strikelogo;
+    const topfliteLogo = topflitelogo;
+    const wccLogo = wcclogo; 
     return (
         <>
-            <nav className="fixed top-0 z-20 w-full bg-white/30 backdrop-blue-md  px-[24px] xl:px-0">
-                <div className="flex flex-wrap items-center justify-between max-w-[1160px] w-full py-7 mx-auto">
-                    <div className="lg:text-[28px] text-2xl font-black text-blue-500">Aviate PH ✈</div>
-                    <div className="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
-                        <div className="flex justify-between items-center  gap-[13px] ">
-                            <svg width="24" height="24" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9 0.0458984C4.02955 0.0458984 0 4.07544 0 9.0459C0 13.5582 3.32386 17.2838 7.65491 17.9346V11.4313H5.42823V9.06553H7.65491V7.49135C7.65491 4.88504 8.92473 3.74081 11.0909 3.74081C12.1283 3.74081 12.6769 3.81772 12.9367 3.8529V5.91799H11.459C10.5394 5.91799 10.2183 6.78976 10.2183 7.7724V9.06553H12.9134L12.5476 11.4313H10.2183V17.9539C14.6111 17.3578 18 13.6019 18 9.0459C18 4.07544 13.9705 0.0458984 9 0.0458984Z" fill="blue" />
-                            </svg>
-                            <svg width="24" height="24" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9 0C4.02975 0 0 4.09285 0 9.14092C0 13.4242 2.904 17.0082 6.819 18C6.777 17.8766 6.75 17.7334 6.75 17.5559V15.9936C6.38475 15.9936 5.77275 15.9936 5.619 15.9936C5.00325 15.9936 4.45575 15.7247 4.19025 15.225C3.8955 14.6697 3.8445 13.8203 3.114 13.3008C2.89725 13.1279 3.06225 12.9306 3.312 12.9573C3.77325 13.0898 4.15575 13.4113 4.51575 13.8881C4.87425 14.3657 5.043 14.4739 5.71275 14.4739C6.0375 14.4739 6.5235 14.4548 6.981 14.3817C7.227 13.7472 7.65225 13.1629 8.172 12.8872C5.175 12.5741 3.74475 11.0598 3.74475 9.00381C3.74475 8.11866 4.116 7.26246 4.74675 6.54109C4.53975 5.82505 4.2795 4.36479 4.82625 3.80872C6.17475 3.80872 6.99 4.69691 7.18575 4.93686C7.85775 4.703 8.59575 4.57046 9.37125 4.57046C10.1482 4.57046 10.8892 4.703 11.5627 4.93838C11.7562 4.69996 12.5723 3.80872 13.9237 3.80872C14.4728 4.36555 14.2095 5.83191 14.0002 6.54642C14.6272 7.26627 14.9963 8.12019 14.9963 9.00381C14.9963 11.0582 13.5682 12.5718 10.5758 12.8864C11.3993 13.3229 12 14.5493 12 15.4733V17.5559C12 17.6351 11.9827 17.6923 11.9738 17.7601C15.4808 16.5116 18 13.1294 18 9.14092C18 4.09285 13.9703 0 9 0Z" fill="blue" />
-                            </svg>
-                            <svg width="24" height="24" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.31818 0C2.385 0 0 2.385 0 5.31818V12.6818C0 15.615 2.385 18 5.31818 18H12.6818C15.615 18 18 15.615 18 12.6818V5.31818C18 2.385 15.615 0 12.6818 0H5.31818ZM13.9091 3.27273C14.3591 3.27273 14.7273 3.64091 14.7273 4.09091C14.7273 4.54091 14.3591 4.90909 13.9091 4.90909C13.4591 4.90909 13.0909 4.54091 13.0909 4.09091C13.0909 3.64091 13.4591 3.27273 13.9091 3.27273ZM9 4.5C11.4832 4.5 13.5 6.51682 13.5 9C13.5 11.4832 11.4832 13.5 9 13.5C6.51682 13.5 4.5 11.4832 4.5 9C4.5 6.51682 6.51682 4.5 9 4.5ZM9 5.31818C6.97091 5.31818 5.31818 6.97091 5.31818 9C5.31818 11.0291 6.97091 12.6818 9 12.6818C11.0291 12.6818 12.6818 11.0291 12.6818 9C12.6818 6.97091 11.0291 5.31818 9 5.31818Z" fill="blue" />
-                            </svg>
-                            <svg width="24" height="24" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18 2.41764C17.3365 2.71224 16.6252 2.91004 15.8775 2.99983C16.6406 2.5425 17.227 1.81863 17.502 0.957274C16.7893 1.37953 15.9967 1.68676 15.1564 1.85229C14.483 1.13403 13.5235 0.686523 12.4615 0.686523C10.4218 0.686523 8.76783 2.33908 8.76783 4.37883C8.76783 4.66782 8.8015 4.94979 8.86462 5.22054C5.79518 5.06623 3.07505 3.59604 1.25275 1.3613C0.9343 1.90841 0.753332 2.5425 0.753332 3.21867C0.753332 4.49948 1.40426 5.63018 2.39607 6.29372C1.79004 6.27408 1.22048 6.10715 0.722469 5.83078C0.722469 5.84621 0.722469 5.86165 0.722469 5.87708C0.722469 7.66712 1.99626 9.15835 3.68389 9.49924C3.37526 9.58341 3.0484 9.6283 2.71171 9.6283C2.47323 9.6283 2.24176 9.60586 2.0159 9.56097C2.48726 11.0269 3.85083 12.0973 5.46551 12.1268C4.20295 13.1172 2.61071 13.7064 0.879588 13.7064C0.580781 13.7064 0.287585 13.6896 0 13.6545C1.63292 14.7038 3.57447 15.3141 5.66051 15.3141C12.4531 15.3141 16.1679 9.68722 16.1679 4.8081C16.1679 4.64818 16.1637 4.48685 16.1581 4.32973C16.8791 3.80927 17.5048 3.15835 18 2.41764Z" fill="blue" />
-                            </svg>
-                        </div>
-                        <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
-                            <span className="sr-only">Open main menu</span>
-                            <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div className="items-center justify-between hidden w-full gap-16 md:flex md:w-auto md:order-1" id="navbar-sticky">
-                        <ul className="flex flex-col items-center w-[90%] justify-center gap-4 md:gap-[30px] p-4 mt-4 font-medium absolute md:left-1/2 md:-translate-x-1/2  z-20 bg-[#141414]/[20%]  border backdrop-blur-2xl md:backdrop-blur-0 border-[#222222] md:bg-transparent rounded-lg md:p-0 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
-                            <li className="text-center">
-                                <a href="/" className="block text-center text-black rounded md:bg-transparent">Home</a>
+            <nav className="fixed top-0 w-full z-50">
+                <Navbar />
+            </nav>
+            <div className='flex  max-w-[1160px] w-full mx-auto  px-[24px] xl:px-0 relative'>
+                <aside id="logo-sidebar" className="top-0 left-0 z-40 w-80 md:w-64 h-screen pt-20 transition-transform sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700">
+                    <div className="h-full px-3 pb-2 overflow-y-auto bg-white dark:bg-black">
+                        <ul className="space-y-2 font-medium">
+                            <li
+                                onMouseEnter={() => setHoveredLogo(alphaAviationLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/AAG" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">Alpha Aviation Group</span>
+                                </Link>
                             </li>
-                            <li className="text-center">
-                                <Link to="/landinglist" className="block text-center text-black rounded md:bg-transparent">All Flying School in the PH</Link>
+                            <li
+                                onMouseEnter={() => setHoveredLogo(adventureFlightLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/AFES" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">Adventure Flight Education and Sports</span>
+                                </Link>
                             </li>
-                            <li className="text-center">
-                                <a href="#portfolio" className="block text-center text-black rounded md:bg-transparent">Aviation News</a>
+                            <li
+                                onMouseEnter={() => setHoveredLogo(airworksLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/Airworks" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">Airworks Aviation Academy</span>
+                                </Link>
                             </li>
-                            <li className="text-center">
-                            <Link to="/landingdiscovery" className="block text-center text-black rounded md:bg-transparent">Discovery Flight/ Simulator</Link>
+                            <li
+                                onMouseEnter={() => setHoveredLogo(allAsiaLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/AAA" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">All Asia Aviation Academy</span>
+                                </Link>
+                            </li>
+                            <li
+                                onMouseEnter={() => setHoveredLogo(aviantechLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/AVIAN" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">Aviantech Institute for Aviation Training Center</span>
+                                </Link>
+                            </li>
+                            <li
+                                onMouseEnter={() => setHoveredLogo(cheynairLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/CHEYNAIR" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">Cheynair Aviation</span>
+                                </Link>
+                            </li>
+
+                            <li
+                                onMouseEnter={() => setHoveredLogo(continentalLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/CONTINENTAL" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">Continental Aero Flying School</span>
+                                </Link>
+                            </li>
+
+                            <li
+                                onMouseEnter={() => setHoveredLogo(constrailsLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/CONSTRAILS" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">Constrails International Avaition Academy, Inc.</span>
+                                </Link>
+                            </li>
+
+                            <li
+                                onMouseEnter={() => setHoveredLogo(deltaLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/DELTA" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">Delta Air International Aviation Academy</span>
+                                </Link>
+                            </li>
+
+                            <li
+                                onMouseEnter={() => setHoveredLogo(echoLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/ECHO" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">Echo Air Internation Aviation Academy INC.</span>
+                                </Link>
+                            </li>
+
+                            <li
+                                onMouseEnter={() => setHoveredLogo(fastLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/FAST" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">Fast Aviation Academy</span>
+                                </Link>
+                            </li>
+
+                            <li
+                                onMouseEnter={() => setHoveredLogo(faaLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/FAA" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">First Aviation Academy</span>
+                                </Link>
+                            </li>
+
+                            <li
+                                onMouseEnter={() => setHoveredLogo(fliteLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/FLITE" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">Fliteline Aviation</span>
+                                </Link>
+                            </li>
+
+                            <li
+                                onMouseEnter={() => setHoveredLogo(iauLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/IAU" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">Indiana Aerospace University</span>
+                                </Link>
+                            </li>
+
+                            <li
+                                onMouseEnter={() => setHoveredLogo(laminarLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/LAMINAR" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">Laminar Aviation PH</span>
+                                </Link>
+                            </li>
+
+                            <li
+                                onMouseEnter={() => setHoveredLogo(leiaaLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/LEIAA" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">Leading Edge International Aviation Academy INC.</span>
+                                </Link>
+                            </li>
+
+                            <li
+                                onMouseEnter={() => setHoveredLogo(omniLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/OMNI" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">Omni Aviation</span>
+                                </Link>
+                            </li>
+
+                            <li
+                                onMouseEnter={() => setHoveredLogo(orientLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/ORIENT" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">Orient Aviation Corporation</span>
+                                </Link>
+                            </li>
+
+                            <li
+                                onMouseEnter={() => setHoveredLogo(pilipinasLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/PILIPINAS" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">Pilipinas Space and Aviation Academy, Inc</span>
+                                </Link>
+                            </li>
+
+                            <li
+                                onMouseEnter={() => setHoveredLogo(precisionLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/PRECISION" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">Precision Flight Controls Philippines Inc.</span>
+                                </Link>
+                            </li>
+
+                            <li
+                                onMouseEnter={() => setHoveredLogo(royhleLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/ROYHLE" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">Royhle Aviation Academy</span>
+                                </Link>
+                            </li>
+
+                            <li
+                                onMouseEnter={() => setHoveredLogo(sapphireLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/SAPPHIRE" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">Sapphire International Aviation Academy</span>
+                                </Link>
+                            </li>
+
+                            <li
+                                onMouseEnter={() => setHoveredLogo(secdeaLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/SECDEA" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">Secdea Aviation Corporation</span>
+                                </Link>
+                            </li>
+
+                            <li
+                                onMouseEnter={() => setHoveredLogo(alexiusLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/ALEXIUS" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">St. Alexius College</span>
+                                </Link>
+                            </li>
+
+                            <li
+                                onMouseEnter={() => setHoveredLogo(strikeLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/STRIKE" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">Strike Wing Aviation Training Center</span>
+                                </Link>
+                            </li>
+
+                            <li
+                                onMouseEnter={() => setHoveredLogo(topfliteLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/TOPFLITE" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">Topflite Academy</span>
+                                </Link>
+                            </li>
+
+                            <li
+                                onMouseEnter={() => setHoveredLogo(wccLogo)}
+                                onMouseLeave={() => setHoveredLogo(null)}
+                                className='cursor-pointer'
+                            >
+                                <Link to="/WCC" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg className="w-6 h-6 flex-shrink-0 ml-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 16v-2l-8-5V2a1 1 0 0 0-2 0v7l-8 5v2l8-2.5V21l-2 1v1l3-1 3 1v-1l-2-1v-7.5l8 2.5Z" />
+                                    </svg>
+                                    <span className="ms-3">WCC Aeronautical & Technological College</span>
+                                </Link>
                             </li>
                         </ul>
                     </div>
-                </div>
-            </nav>
-            <aside id="logo-sidebar" className=" top-0 left-0 z-40 w-80 h-screen pt-20 transition-transform  bg-white/30 backdrop-blue-md border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700">
-                <div className="h-full px-3 pb-2 overflow-y-auto bg-white dark:bg-black">
-                    <ul className="space-y-2 font-medium">
-                        <li>
-                            <Link to="/AAG" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">Alpha Aviation Group</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/AFES" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">AFES</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/Airworks" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">Airworks Aviation Academy</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/AAA" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">All Asia Aviation</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/AVIAN" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">Aviantech</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/CHEYNAIR" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">Cheynair</span>
-                            </Link>
-                        </li>
+                </aside>
 
-                        <li>
-                            <Link to="/CONTINENTAL" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">Continental</span>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link to="/CONSTRAILS" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">Constrails</span>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link to="/DELTA" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">Delta</span>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link to="/ECHO" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">Echo</span>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link to="/FAST" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">Fast</span>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link to="/FAA" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">FAA</span>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link to="/FLITE" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">Flite</span>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link to="/IAU" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">IAU</span>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link to="/LAMINAR" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">LAMINAR</span>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link to="/LEIAA" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">LEIAA</span>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link to="/OMNI" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">Omni</span>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link to="/ORIENT" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">Orient</span>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link to="/PILIPINAS" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">Pilipinas</span>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link to="/PRECISION" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">Precision</span>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link to="/ROYHLE" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">Royhle</span>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link to="/SAPPHIRE" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">Sapphire</span>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link to="/SECDEA" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">Secdea</span>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link to="/ALEXIUS" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">ALEXIUS</span>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link to="/STRIKE" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">STRIKE</span>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link to="/TOPFLITE" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">TOPFLITE</span>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link to="/WCC" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <svg className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                    <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                    <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                                </svg>
-                                <span className="ms-3">WCC</span>
-                            </Link>
-                        </li>
-
-
-
-
-
-
-                    </ul>
-                </div>
-            </aside>
+                <main className="flex-1 p-4 flex flex-col items-center justify-center h-screen" data-aos="fade-up" data-aos-duration="1000" >
+                    {hoveredLogo && (
+                        <img src={hoveredLogo} alt="Alpha Aviation Logo" className="mt-8 max-w-xs mx-auto hidden md:block " data-aos="zoom-in" data-aos-delay="200" />
+                    )}
+                </main>
+            </div>
 
 
 

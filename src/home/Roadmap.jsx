@@ -62,9 +62,9 @@ function Roadmap() {
             <p className="text-[#0e0e0e] w-full">
               A <span className="font-bold"> Flight Instructor License </span> will allow you to teach
               young individuals to become pilots. It will also allow you to <span className="font-bold">
-                build hours and skills
+                build hours and skills 
               </span>
-              to enter the <span className="font-bold"> airline industry.</span>
+               to enter the <span className="font-bold"> airline industry.</span>
             </p>
           </div>
           <div data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000" className="col-span-1 flex flex-col gap-[14px]  backdrop-blur-sm border border-[#222222] p-5 bg-[#141414]/[20%] rounded-lg">
@@ -92,7 +92,9 @@ function Roadmap() {
         </div>
         
       </div>
+      
     </section>
+    
   )
 }
 
