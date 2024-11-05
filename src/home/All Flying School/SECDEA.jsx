@@ -31,8 +31,6 @@ function SECDEA() {
 
                 </div>
             </section>
-
-            
         </>
     )
 }

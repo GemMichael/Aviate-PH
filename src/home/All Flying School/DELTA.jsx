@@ -62,7 +62,7 @@ function DELTA() {
                             </div>
                             <a
                                 href="hhttps://www.daiaa.com.ph/p/contact-us.html"
-                                className="relative z-10 bg-[#b22826] hover:bg-[#828483]  transition-all duration-300 text-white py-3 px-8 rounded-lg text-lg font-semibold shadow-lg">
+                                className="relative z-10 bg-[#b22826] hover:bg-[#828483]  transition-all duration-300 text-white py-3 px-8 rounded-lg text-lg font-semibold shadow-lg"  target="_blank" rel="noopener noreferrer">
                                 Enroll Now
                             </a>
                         </div>
@@ -203,7 +203,7 @@ function DELTA() {
                     <div className="flex flex-col lg:flex-row justify-between w-full mt-[132px] ">
                         <p className="text-white font-bold hidden md:block">Delta Air International Aviation Academy Inc.</p>
                         <div className="flex justify-between gap-[19px]">
-                            <a href="https://www.facebook.com/amadeltaaviation" className="text-white font-semibold">
+                            <a href="https://www.facebook.com/amadeltaaviation" className="text-white font-semibold"  target="_blank" rel="noopener noreferrer">
                                 Facebook
                             </a>
                         </div>
