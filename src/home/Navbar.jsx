@@ -33,7 +33,7 @@ function Navbar() {
                         <Link to="/landinglist" className="block text-center text-black rounded md:bg-transparent"  onClick={closeMenu}>All Flying School in the PH</Link>
                         </li>
                         <li className="text-center">
-                            <a href="/landingshop" className="block text-center text-black rounded md:bg-transparent"  onClick={closeMenu}>Aviation Shop</a>
+                            <Link to="/landingshop" className="block text-center text-black rounded md:bg-transparent"  onClick={closeMenu}>Aviation Shop</Link>
                         </li>
                         <li className="text-center">
                         <Link to="/landingdiscovery" className="block text-center text-black rounded md:bg-transparent"  onClick={closeMenu}>Discovery Flights/ Simulator</Link>
