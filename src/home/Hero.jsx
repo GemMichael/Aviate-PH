@@ -19,15 +19,14 @@ function Hero() {
                         This website is your ultimate guide to finding the perfect flying school.
                         Here, you'll discover a <span className="font-bold"> full list of flight schools </span>
                         to help you choose the one that best fits your journey toward becoming a pilot. You can 
-                        also learn about the <span className="font-bold"> different pilot licenses, </span> 
-                        see <span className="font-bold"> projections </span> for global pilot job demand, and learn
-                        about the <span className="font-bold"> lifestyle </span> of both student pilots and professional pilots. Additionally, the site 
+                        also learn about the <span className="font-bold"> different pilot licenses. </span> 
+                        Additionally, the site 
                         will list down the stores where you can find pilot supplies, as well as a list of <span className="font-bold"> flight simulators and discovery flights </span>, allowing you to expercience what it's like to be a pilot 
                         without committing to a flying school. Explore your options and take the first step toward your
                         flying dreams. Let's earn our wings!
                     </p>
                     <p className="mt-5 text-black  lg:text-start md:text-center leading-[1.5]">
-                        more here
+                       
                     </p>
                 </div>
                 

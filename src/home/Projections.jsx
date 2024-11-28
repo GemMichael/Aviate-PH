@@ -9,7 +9,7 @@ function Projections() {
                     className="bd-gradient-to-r flex flex-col  items-center from-blue-700/[70%] to-blue-300/[30%] rounded-lg px-8 lg:gap-0 gap-3 lg:px[45.5px] py-10">
                     <h1 className="text-[56px] text-black sm:text-center lg:text-center font-bold leading-[1] mb-3">Things to consider in finding the right school</h1>
                     <p className="text-black sm:text-center lg:text-center leading[1.8]">
-                        Hellllllo
+                        
                     </p>
                 </div>
                 <div className="relative">
@@ -83,7 +83,7 @@ function Projections() {
                         </div>
                     </div>
                 </div>
-                <Link to="/landinglist" className="block mx-auto mt-10 bg-[#001F6B] hover:bg-[#00A8E8] transition-all duration-300 text-white py-3 px-8 rounded-lg text-lg font-semibold shadow-lg text-center focus:ring-2 focus:ring-offset-2 focus:ring-[#00A8E8]">
+                <Link to="/landinglist" className="block mx-auto mt-10 bg-blue-500 hover:bg-blue-600 transition-all duration-300 text-white py-3 px-8 rounded-lg text-lg font-semibold shadow-lg text-center focus:ring-2 focus:ring-offset-2 focus:ring-[#00A8E8]">
                     Check out flight school!
                 </Link>
             </section>
