@@ -39,14 +39,14 @@ function Pilotgoodies() {
 
             <main>
                 <section id="home" className="scroll-pt-32 max-w-[1160px] w-full mx-auto mt-[100px] lg:mt-[150px]  px-[24px] xl:px-0 relative">
-                    <Link to="/landingshop" className="absolute -top-12 left-0 bg-blue-500 text-white py-2 px-4 rounded">
+                    <Link to="/landingshop" className="absolute lg:-top-12 top-0 left-0 bg-blue-500 text-white py-2 px-4 rounded z-50 mt-4 ml-4 lg:ml-0">
                         Return
                     </Link>
 
                     <div className="flex lg:flex-row flex-col-reverse items-center justify-between gap-9">
                         <div data-aos="fade-down-left" data-aos-duration="1000" className="max-w-[694px] w-full flex flex-col gap-4 lg:gap-[32px] ">
                             <div>
-                                <h1 className="lg:w-[694px] lg:text-start md:text-center text-transparent bg-clip-text bg-gradient-to-r from-[#072f60] to-[#1262a1] text-5xl lg:text-[56px] font-bold via-[#57cced] leading-[1.3] ">
+                                <h1 className="lg:w-[694px] lg:text-start md:text-center text-transparent bg-clip-text bg-gradient-to-r from-[#072f60] to-[#1262a1] text-5xl lg:text-[56px] font-bold via-[#57cced] leading-[1.3] mt-12 lg:mt-0 ">
                                     Pilot Goodies
                                 </h1>
                             </div>

@@ -28,14 +28,14 @@ function Sputnik() {
             <div className="w-[366px] hidden h-[366px] -z-10  bg-yellow-600 bg-opacity-30 rounded-full blur-[123px] top-[140px] lg:absolute left-[640px]"></div>
             <div className="w-[366px] hidden h-[366px] lg:block -z-10  bg-blue-900 bg-opacity-20 rounded-full blur-[105px] lg:absolute top-[407px] -right-[90px]"></div>
             <section id="home" className="scroll-pt-32 max-w-[1160px] w-full mx-auto mt-[100px] lg:mt-[150px]  px-[24px] xl:px-0 relative">
-                <Link to="/landingdiscovery" className="absolute -top-12 left-0 bg-blue-500 text-white py-2 px-4 rounded">
+                <Link to="/landingdiscovery" className="absolute lg:-top-12 top-0 left-0 bg-blue-500 text-white py-2 px-4 rounded z-50 mt-4 ml-4 lg:ml-0">
                     Return
                 </Link>
 
                 <div className="flex lg:flex-row flex-col-reverse items-center justify-between gap-9">
                     <div data-aos="fade-down-left" data-aos-duration="1000" className="max-w-[694px] w-full flex flex-col gap-4 lg:gap-[32px] ">
                         <div>
-                            <h1 className="lg:w-[694px] lg:text-start md:text-center text-transparent bg-clip-text bg-gradient-to-r from-[#103f8b] to-[#ffffff] text-5xl lg:text-[56px] font-bold via-[#C9A03B] leading-[1.3] ">
+                            <h1 className="lg:w-[694px] lg:text-start md:text-center text-transparent bg-clip-text bg-gradient-to-r from-[#103f8b] to-[#ffffff] text-5xl lg:text-[56px] font-bold via-[#C9A03B] leading-[1.3] mt-12 lg:mt-0">
                                 Sputnik Aviation
                             </h1>
                         </div>
