@@ -1,9 +1,10 @@
 import React from 'react'
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
-    <footer className="py-[64px]" data-aos="fade-up" data-aos-duration="1000">
-        <p className="text-center font-semibold text-black">© 2024 Aviate PH All rights reserved.</p>
+    <footer className="py-[64px]">
+        <p className="text-center font-semibold text-black">© {currentYear} Aviate PH All rights reserved. Created by Gem Michael Nieva.</p>
     </footer>
   )
 }

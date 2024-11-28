@@ -19,7 +19,6 @@ function Landing() {
         <Pilotperks />
         <Roadmap />
         <Projections />
-        <Pilotjourney />
         <End />
         <Footer />
 

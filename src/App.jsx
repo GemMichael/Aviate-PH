@@ -36,6 +36,11 @@ import Sputnik from './home/Recreational/Sputnik';
 import Goodboys from './home/Recreational/Goodboys';
 import Yatzar from './home/Recreational/Yatzar';
 import Subic from './home/Recreational/Subic';
+import LandingShop from './home/Aviation Shop/LandingShop';
+import L3harris from './home/Aviation Shop/L3harris';
+import Skyaerotrade from './home/Aviation Shop/Skyaerotrade';
+import Pilotgoodies from './home/Aviation Shop/Pilotgoodies';
+import Pilotstarterpack from './home/Aviation Shop/Pilotstarterpack';
 
 export default function App() {
 
@@ -83,6 +88,11 @@ export default function App() {
         <Route path='goodboys' element={<Goodboys />} />
         <Route path='yatzar' element={<Yatzar />} />
         <Route path='subic' element={<Subic />} />
+        <Route path='landingshop' element={<LandingShop />} />
+        <Route path='skyaerotrade' element={<Skyaerotrade />} />
+        <Route path='l3harris' element={<L3harris />} />
+        <Route path='pilotgoodies' element={<Pilotgoodies />} />
+        <Route path='pilotstarterpack' element={<Pilotstarterpack />} />
       </Routes>
     </Router>
   );
