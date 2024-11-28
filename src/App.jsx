@@ -88,7 +88,7 @@ export default function App() {
         <Route path='goodboys' element={<Goodboys />} />
         <Route path='yatzar' element={<Yatzar />} />
         <Route path='subic' element={<Subic />} />
-        <Route path='landingshop' element={<LandingShop />} />
+        <Route path='/landingshop' element={<LandingShop />} />
         <Route path='skyaerotrade' element={<Skyaerotrade />} />
         <Route path='l3harris' element={<L3harris />} />
         <Route path='pilotgoodies' element={<Pilotgoodies />} />
