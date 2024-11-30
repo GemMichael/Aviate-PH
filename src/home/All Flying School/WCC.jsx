@@ -48,7 +48,7 @@ function WCC() {
                             </div>
                             <div className="w-full lg:max-w-[79%]">
                                 <p className="text-black lg:text-start md:text-center leading-[1.5]">
-                                    AWCC Aeronautical and Technological College stands on the conviction that its educational vision and mission constitute a high calling and ministry. Bound by its dedication to educational excellence, it is mandated to lead in holistic and professional education that is Christian in foundation, nationalist in perspective, competency-based and research-driven in curriculum, scientific in emphasis, global in scope and culturally diverse in orientation.
+                                    WCC Aeronautical and Technological College stands on the conviction that its educational vision and mission constitute a high calling and ministry. Bound by its dedication to educational excellence, it is mandated to lead in holistic and professional education that is Christian in foundation, nationalist in perspective, competency-based and research-driven in curriculum, scientific in emphasis, global in scope and culturally diverse in orientation.
                                 </p>
                             </div>
                             <a
@@ -73,7 +73,7 @@ function WCC() {
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1000">
                         <p className="w-full max-w-[793px] text-center text-black text-base font-normal mx-auto leading-[1.5]">
-                            Our aircraft fleet consists of the Cessna 172, Tecnam 2006T, Tecnam P2002JF, and Tecnam P-Mentor
+                            Aircraft fleet consists of the Cessna 172, Tecnam 2006T, Tecnam P2002JF, and Tecnam P-Mentor
                         </p>
                     </div>
                 </section>

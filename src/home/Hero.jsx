@@ -11,7 +11,7 @@ function Hero() {
             <div data-aos="fade-down-left" data-aos-duration="1000" className="max-w-[694px] w-full flex flex-col gap-4 lg:gap-[32px] ">
                 <div>
                     <h1 className="lg:w-[694px] lg:text-start md:text-center text-transparent bg-clip-text bg-gradient-to-r from-[#87CEEB] to-[#191970] text-5xl lg:text-[56px] font-bold via-[#4682B4] leading-[1.3] ">
-                        Your guide to find best Flying School for you!
+                        Your guide to find best Flying School for you
                     </h1>
                 </div>
                 <div className="w-full lg:max-w-[79%]">
@@ -21,9 +21,9 @@ function Hero() {
                         to help you choose the one that best fits your journey toward becoming a pilot. You can 
                         also learn about the <span className="font-bold"> different pilot licenses. </span> 
                         Additionally, the site 
-                        will list down the stores where you can find pilot supplies, as well as a list of <span className="font-bold"> flight simulators and discovery flights </span>, allowing you to expercience what it's like to be a pilot 
+                        will list down the stores where you can find pilot supplies, as well as a list of <span className="font-bold"> flight simulators and discovery flights </span>, allowing you to experience what it's like to be a pilot 
                         without committing to a flying school. Explore your options and take the first step toward your
-                        flying dreams. Let's earn our wings!
+                        flying dreams. Earn your wings!
                     </p>
                     <p className="mt-5 text-black  lg:text-start md:text-center leading-[1.5]">
                        
@@ -31,7 +31,6 @@ function Hero() {
                 </div>
                 
             </div>
-
         </div>
     </section>
     </>

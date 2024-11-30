@@ -25,46 +25,46 @@ function Pilotperks() {
                 <div className="grid md:grid-cols2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[19px]">
                     <div data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000" className="col-span-1">
                         <div className="flex items-center gap-3">
-                            <a href="#" className="block w-full h-full overflow-hidden rounded-lg" data-aos="fade-up" data-aos-duration="1000">
+                            <div className="block w-full h-full overflow-hidden rounded-lg" data-aos="fade-up" data-aos-duration="1000">
                                 <img
                                     className="w-full h-full object-cover transform hover:scale-150 transition-transform duration-[600ms]"
                                     src={motivation1}
                                     alt=""
                                 />
-                            </a>
+                            </div>
                         </div>
                     </div>
                     <div data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000" className="col-span-1">
                         <div className="flex items-center gap-3">
-                            <a href="#" className="block w-full h-full overflow-hidden rounded-lg" data-aos="fade-up" data-aos-duration="1000">
+                            <div className="block w-full h-full overflow-hidden rounded-lg" data-aos="fade-up" data-aos-duration="1000">
                                 <img
                                     className="w-full h-full object-cover transform hover:scale-150 transition-transform duration-[600ms]"
                                     src={motivation2}
                                     alt=""
                                 />
-                            </a>
+                            </div>
                         </div>
                     </div>
                     <div data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000" className="col-span-1">
                         <div className="flex items-center gap-3">
-                            <a href="#" className="block w-full h-full overflow-hidden rounded-lg" data-aos="fade-up" data-aos-duration="1000">
+                            <div className="block w-full h-full overflow-hidden rounded-lg" data-aos="fade-up" data-aos-duration="1000">
                                 <img
                                     className="w-full h-full object-cover transform hover:scale-150 transition-transform duration-[600ms]"
                                     src={motivation3}
                                     alt=""
                                 />
-                            </a>
+                            </div>
                         </div>
                     </div>
                     <div data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000" className="col-span-1">
                         <div className="flex items-center gap-3">
-                            <a href="#" className="block w-full h-full overflow-hidden rounded-lg" data-aos="fade-up" data-aos-duration="1000">
+                            <div className="block w-full h-full overflow-hidden rounded-lg" data-aos="fade-up" data-aos-duration="1000">
                                 <img
                                     className="w-full h-full object-cover transform hover:scale-150 transition-transform duration-[600ms]"
                                     src={motivation4}
                                     alt=""
                                 />
-                            </a>
+                            </div>
                         </div>
                     </div>
 

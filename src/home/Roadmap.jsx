@@ -28,8 +28,8 @@ function Roadmap() {
               <p className="text-black font-bold">Private Pilot<br />License</p>
             </div>
             <p className="text-[#0e0e0e] w-full">
-              Upon completing your pilot training, which includes a total of <span className="font-bold"> 40 flight hours </span>
-              20 hours with an instructor, 10 hours of solo flight, and an additional 10 hours either dual or solo flight, and successfully passing
+              Upon completing your pilot training, which includes a total of <span className="font-bold"> 40 flight hours, </span>
+              20 hours with an instructor, 10 hours of solo flight, and an additional 10 hours of either dual or solo flight, and successfully passing
               the CAAP checkride, you will be eligible to obtain a <span className="font-bold"> Private Pilot License. </span>
               With a PPL, you can fly solo as well as carry passengers.
             </p>
@@ -39,10 +39,10 @@ function Roadmap() {
               <p className="text-black font-bold">Commercial Pilot<br />License</p>
             </div>
             <p className="text-[#0e0e0e] w-full">
-              After obtaining your Private Pilot License and you want a <span className="font-bold"> career as a pilot </span>, your will need a 
-              <span className="font-bold"> Commercial Pilot License </span> to be compendated for your flying services. 
+              After obtaining your Private Pilot License and you want a <span className="font-bold"> career as a pilot  </span>, you will need a 
+              <span className="font-bold"> Commercial Pilot License </span> to be compensated for your flying services. 
               To earn this license, you must secure a <span className="font-bold"> Class 1 medical certificate from CAAP, </span> 
-              accumulate at least <span className="font-bold"> 150 flights hours, </span> and successfully pass the CAAP Checkride.
+              accumulate at least <span className="font-bold"> 150 flight hours, </span> and successfully pass the CAAP Checkride.
             </p>
           </div>
           <div data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000" className="col-span-1 flex flex-col gap-[14px]  backdrop-blur-sm border border-[#222222] p-5 bg-[#141414]/[20%] rounded-lg">
@@ -51,8 +51,8 @@ function Roadmap() {
             </div>
             <p className="text-[#0e0e0e] w-full">
               An <span className="font-bold"> Instrument Rating </span> allows pilots to fly in low or zero visibility conditions
-              using only cockpit instrument. With this license, you can <span className="font-bold"> operate the aircraft at night or through clouds, relying on your instrument. </span>
-              It enables you to master flying the aircraft by instrument alone, enchancing your overall flying skills and safety.
+              using only cockpit instruments. With this license, you can <span className="font-bold"> operate the aircraft at night or through clouds, relying on your instrument. </span>
+              It enables you to master flying the aircraft by instrument alone, enhancing your overall flying skills and safety.
             </p>
           </div>
           <div data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000" className="col-span-1 flex flex-col gap-[14px]  backdrop-blur-sm border border-[#222222] p-5 bg-[#141414]/[20%] rounded-lg">
@@ -61,10 +61,10 @@ function Roadmap() {
             </div>
             <p className="text-[#0e0e0e] w-full">
               A <span className="font-bold"> Flight Instructor License </span> will allow you to teach
-              young individuals to become pilots. It will also allow you to <span className="font-bold">
-                build hours and skills 
+              young individuals to become pilots. It will also allow you to  <span className="font-bold">
+                 build hours and skills     
               </span>
-               to enter the <span className="font-bold"> airline industry.</span>
+               to enter the  <span className="font-bold">  airline industry.</span>
             </p>
           </div>
           <div data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000" className="col-span-1 flex flex-col gap-[14px]  backdrop-blur-sm border border-[#222222] p-5 bg-[#141414]/[20%] rounded-lg">
@@ -84,7 +84,7 @@ function Roadmap() {
             </div>
             <p className="text-[#0e0e0e] w-full">
               After getting your pilot license, a <span className="font-bold"> Type Rating </span> allows you to fly
-              specific aircraft models. Since aircraft vary in operation and performance, this certifiaction is necessary
+              specific aircraft models. Since aircraft vary in operation and performance, this certification is necessary
               to fly a particular type of plane.
             </p>
           </div>
